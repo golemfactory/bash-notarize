@@ -1,4 +1,4 @@
-#Bash-Notarize
+# Bash-Notarize
 #### Sign and Notarize your binaries with ease. :shipit:
 
 ### Pre-requisites
