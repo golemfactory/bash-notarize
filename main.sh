@@ -79,13 +79,13 @@ if [ -z "$ASC_PROVIDER" ] || [ -z "$AC_USERNAME" ] || [ -z "$AC_PASSWORD" ] || [
     exit
 fi
 
-# create temporary files
+# create temporary files and folders
 NOTARIZE_APP_LOG=$(mktemp notarize-app)
 NOTARIZE_INFO_LOG=$(mktemp notarize-info)
 TAR_BUCKET=$(mktemp -d tar-bucket.XXXX)
 ZIP_BUCKET=$(mktemp -d zip-bucket.XXXX)
 
-# delete temporary files on exit
+# delete temporary files and folders on exit
 function finish {
 	rm "$NOTARIZE_APP_LOG" "$NOTARIZE_INFO_LOG"
 	rm -rf "$TAR_BUCKET" "$ZIP_BUCKET"
