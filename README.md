@@ -38,9 +38,23 @@
 | --- | --- | --- |
 | `-a` | `--asc_provider` | Team ID |
 | `-u` | `--ac_username` | Apple ID |
-| `-p` | `--ac_password` | App-specific Password |
+| `-p` | `--ac_password` | App-specific Password (For security reasons call it better from keychain. More below.) |
 | `-s` | `--app_sign` | Certificate Name |
 | `-i` | `--bundle_id` | Give a bundle id to identify project easily. e.g. network.golem.app |
 | `-t` | `--bundle_target` | Target tar.gz file of the project (dmg support will be added) |
 | `-e` | `--entitlements` | Additional permission list |
 | `-d` | `--sleep_delay` | Iteration time notarization check |
+
+# Store App-Specific Password in Keychain
+
+After having your app-specific password from Apple, it's better to keep it in keychain and call it from there.<br/>
+(Note: This step may need your user password once when running the script)
+
+To add your password;<br/>
+`xcrun altool --store-password-in-keychain-item "TITLE_TO_CALL_PASSWORD_FROM_KEYCHAIN"
+               -u "APPLE_ID"
+               -p YOUR_APP_SPECIFIC_PASS`
+
+Later you can use it in script with;
+
+`-p @keychain:TITLE_TO_CALL_PASSWORD_FROM_KEYCHAIN \` e.g. `-p @keychain:AC_PASSWORD \`
