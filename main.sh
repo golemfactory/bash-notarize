@@ -1,10 +1,10 @@
 #!/bin/bash
 #title           :bash-notarize
 #description     :This script will automate signing and notarizing process
-#author		 	 :Muhammed Tanrikulu (mdt)
+#author		 :Muhammed Tanrikulu (mdt)
 #date            :02022020
 #version         :0.1    
-#usage		 	 :./main.sh <ARGUMENTS>
+#usage		 :./main.sh <ARGUMENTS>
 #notes           :You will need Apple developer account, certificate and app-specific password
 #bash_version    :3.2.57(1)-release
 #==============================================================================
