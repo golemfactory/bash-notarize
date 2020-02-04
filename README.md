@@ -7,8 +7,7 @@
 - Signing Certificate ([https://developer.apple.com/support/certificates/](https://developer.apple.com/support/certificates/))
 - App-specific password ([https://support.apple.com/en-us/HT204397](https://support.apple.com/en-us/HT204397))
 - Team/Provider ID (if you have organization account)
-	+ To get your provider ID:
-	<br/>
+	+ To get your provider ID:<br/>
 	`xcrun altool --list-providers -u "AC_USERNAME" -p "AC_PASSWORD"`
 	<br/>
 	This will return to you something like;
