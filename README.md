@@ -13,9 +13,9 @@
 	<br/>
 	This will return to you something like;
 	<br/>
-	| ProviderName | ProviderShortname | WWDRTeamID |
-	| --- | --- | --- |
-	| Example GmbH | ID-OF-TEAM | ID-OF-TEAM |
+| ProviderName | ProviderShortname | WWDRTeamID |
+| --- | --- | --- |
+| Example GmbH | ID-OF-TEAM | ID-OF-TEAM |
 
 ### Usage
 
@@ -34,15 +34,14 @@
 	-t TARGET_FILE \
 	-e ./entitlements.plist
 ```
-<br/>
 
 | Abbr | Full Flag | Description |
-| --- | --- | --- | --- |
-| -a | --asc_provider | Team ID |
-| -u | --ac_username | Apple ID |
-| -p | --ac_password | App-specific Password |
-| -s | --app_sign | Certificate Name |
-| -i | --bundle_id | Give a bundle id to identify project easily. e.g. network.golem.app |
-| -t | --bundle_target | Target tar.gz file of the project (dmg support will be added) |
-| -e | --entitlements | Additional permission list |
-| -d | --sleep_delay | Iteration time notarization check |
+| --- | --- | --- |
+| `-a` | `--asc_provider` | Team ID |
+| `-u` | `--ac_username` | Apple ID |
+| `-p` | `--ac_password` | App-specific Password |
+| `-s` | `--app_sign` | Certificate Name |
+| `-i` | `--bundle_id` | Give a bundle id to identify project easily. e.g. network.golem.app |
+| `-t` | `--bundle_target` | Target tar.gz file of the project (dmg support will be added) |
+| `-e` | `--entitlements` | Additional permission list |
+| `-d` | `--sleep_delay` | Iteration time notarization check |
