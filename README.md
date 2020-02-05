@@ -44,6 +44,7 @@
 | `-t` | `--bundle_target` | Target tar.gz file of the project (dmg support will be added) |
 | `-e` | `--entitlements` | Additional permission list |
 | `-d` | `--sleep_delay` | Iteration time notarization check |
+| `-h` | `--help` | Help screen |
 
 # Store App-Specific Password in Keychain
 
